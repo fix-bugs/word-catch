@@ -1,0 +1,474 @@
+{
+  "source": "人教版一年级起点·一年级上",
+  "note": "释义改写成适合儿童的短义，不使用表格中的长词典释义。音标只保留一个常用读法。本文件不包含教材录音。",
+  "themes": [
+    {
+      "id": "stationery",
+      "name": "文具",
+      "blurb": "书、铅笔、尺子和书包",
+      "color": "#E07A3D"
+    },
+    {
+      "id": "face",
+      "name": "五官",
+      "blurb": "脸、眼睛、耳朵、鼻子和嘴巴",
+      "color": "#E36BA7"
+    },
+    {
+      "id": "animal",
+      "name": "动物",
+      "blurb": "猫、狗、鸟、猴子和老虎",
+      "color": "#2FA36B"
+    },
+    {
+      "id": "number",
+      "name": "数字",
+      "blurb": "从一数到十",
+      "color": "#3D6FE8"
+    },
+    {
+      "id": "color",
+      "name": "颜色",
+      "blurb": "红、黄、蓝、绿和黑色",
+      "color": "#E3B23C"
+    },
+    {
+      "id": "fruit",
+      "name": "水果",
+      "blurb": "苹果、梨、香蕉和橙子",
+      "color": "#EF5D5D"
+    },
+    {
+      "id": "other",
+      "name": "其他",
+      "blurb": "我、你、是、喜欢这些词",
+      "color": "#7A6AD4"
+    }
+  ],
+  "words": [
+    {
+      "id": "book",
+      "en": "book",
+      "ipaUk": "bʊk",
+      "ipaUs": "bʊk",
+      "meaning": "书",
+      "theme": "stationery"
+    },
+    {
+      "id": "ruler",
+      "en": "ruler",
+      "ipaUk": "ˈruːlə",
+      "ipaUs": "ˈruːlər",
+      "meaning": "尺子",
+      "theme": "stationery"
+    },
+    {
+      "id": "pencil",
+      "en": "pencil",
+      "ipaUk": "ˈpensl",
+      "ipaUs": "ˈpensl",
+      "meaning": "铅笔",
+      "theme": "stationery"
+    },
+    {
+      "id": "schoolbag",
+      "en": "schoolbag",
+      "ipaUk": "ˈskuːlbæɡ",
+      "ipaUs": "ˈskuːlbæɡ",
+      "meaning": "书包",
+      "theme": "stationery"
+    },
+    {
+      "id": "teacher",
+      "en": "teacher",
+      "ipaUk": "ˈtiːtʃə",
+      "ipaUs": "ˈtiːtʃər",
+      "meaning": "老师",
+      "theme": "other"
+    },
+    {
+      "id": "I",
+      "en": "I",
+      "ipaUk": "aɪ",
+      "ipaUs": "aɪ",
+      "meaning": "我",
+      "theme": "other"
+    },
+    {
+      "id": "have",
+      "en": "have",
+      "ipaUk": "hæv",
+      "ipaUs": "hæv",
+      "meaning": "有",
+      "theme": "other"
+    },
+    {
+      "id": "a",
+      "en": "a",
+      "ipaUk": "ə",
+      "ipaUs": "ə",
+      "meaning": "一个（辅音前）",
+      "theme": "other"
+    },
+    {
+      "id": "an",
+      "en": "an",
+      "ipaUk": "ən",
+      "ipaUs": "æn",
+      "meaning": "一个（元音前）",
+      "theme": "other"
+    },
+    {
+      "id": "face",
+      "en": "face",
+      "ipaUk": "feɪs",
+      "ipaUs": "feɪs",
+      "meaning": "脸",
+      "theme": "face"
+    },
+    {
+      "id": "ear",
+      "en": "ear",
+      "ipaUk": "ɪə",
+      "ipaUs": "ɪr",
+      "meaning": "耳朵",
+      "theme": "face"
+    },
+    {
+      "id": "eye",
+      "en": "eye",
+      "ipaUk": "aɪ",
+      "ipaUs": "aɪ",
+      "meaning": "眼睛",
+      "theme": "face"
+    },
+    {
+      "id": "nose",
+      "en": "nose",
+      "ipaUk": "nəʊz",
+      "ipaUs": "noʊz",
+      "meaning": "鼻子",
+      "theme": "face"
+    },
+    {
+      "id": "mouth",
+      "en": "mouth",
+      "ipaUk": "maʊθ",
+      "ipaUs": "maʊθ",
+      "meaning": "嘴巴",
+      "theme": "face"
+    },
+    {
+      "id": "this",
+      "en": "this",
+      "ipaUk": "ðɪs",
+      "ipaUs": "ðɪs",
+      "meaning": "这个",
+      "theme": "other"
+    },
+    {
+      "id": "is",
+      "en": "is",
+      "ipaUk": "ɪz",
+      "ipaUs": "ɪz",
+      "meaning": "是（单数）",
+      "theme": "other"
+    },
+    {
+      "id": "my",
+      "en": "my",
+      "ipaUk": "maɪ",
+      "ipaUs": "maɪ",
+      "meaning": "我的",
+      "theme": "other"
+    },
+    {
+      "id": "dog",
+      "en": "dog",
+      "ipaUk": "dɒɡ",
+      "ipaUs": "dɔːɡ",
+      "meaning": "狗",
+      "theme": "animal"
+    },
+    {
+      "id": "bird",
+      "en": "bird",
+      "ipaUk": "bɜːd",
+      "ipaUs": "bɜːrd",
+      "meaning": "鸟",
+      "theme": "animal"
+    },
+    {
+      "id": "tiger",
+      "en": "tiger",
+      "ipaUk": "ˈtaɪɡə",
+      "ipaUs": "ˈtaɪɡər",
+      "meaning": "老虎",
+      "theme": "animal"
+    },
+    {
+      "id": "monkey",
+      "en": "monkey",
+      "ipaUk": "ˈmʌŋki",
+      "ipaUs": "ˈmʌŋki",
+      "meaning": "猴子",
+      "theme": "animal"
+    },
+    {
+      "id": "cat",
+      "en": "cat",
+      "ipaUk": "kæt",
+      "ipaUs": "kæt",
+      "meaning": "猫",
+      "theme": "animal"
+    },
+    {
+      "id": "what",
+      "en": "what",
+      "ipaUk": "wɒt",
+      "ipaUs": "wʌt",
+      "meaning": "什么",
+      "theme": "other"
+    },
+    {
+      "id": "it",
+      "en": "it",
+      "ipaUk": "ɪt",
+      "ipaUs": "ɪt",
+      "meaning": "它",
+      "theme": "other"
+    },
+    {
+      "id": "one",
+      "en": "one",
+      "ipaUk": "wʌn",
+      "ipaUs": "wʌn",
+      "meaning": "一",
+      "theme": "number"
+    },
+    {
+      "id": "two",
+      "en": "two",
+      "ipaUk": "tuː",
+      "ipaUs": "tuː",
+      "meaning": "二",
+      "theme": "number"
+    },
+    {
+      "id": "three",
+      "en": "three",
+      "ipaUk": "θriː",
+      "ipaUs": "θriː",
+      "meaning": "三",
+      "theme": "number"
+    },
+    {
+      "id": "four",
+      "en": "four",
+      "ipaUk": "fɔː",
+      "ipaUs": "fɔːr",
+      "meaning": "四",
+      "theme": "number"
+    },
+    {
+      "id": "five",
+      "en": "five",
+      "ipaUk": "faɪv",
+      "ipaUs": "faɪv",
+      "meaning": "五",
+      "theme": "number"
+    },
+    {
+      "id": "six",
+      "en": "six",
+      "ipaUk": "sɪks",
+      "ipaUs": "sɪks",
+      "meaning": "六",
+      "theme": "number"
+    },
+    {
+      "id": "seven",
+      "en": "seven",
+      "ipaUk": "ˈsevn",
+      "ipaUs": "ˈsevən",
+      "meaning": "七",
+      "theme": "number"
+    },
+    {
+      "id": "eight",
+      "en": "eight",
+      "ipaUk": "eɪt",
+      "ipaUs": "eɪt",
+      "meaning": "八",
+      "theme": "number"
+    },
+    {
+      "id": "nine",
+      "en": "nine",
+      "ipaUk": "naɪn",
+      "ipaUs": "naɪn",
+      "meaning": "九",
+      "theme": "number"
+    },
+    {
+      "id": "ten",
+      "en": "ten",
+      "ipaUk": "ten",
+      "ipaUs": "ten",
+      "meaning": "十",
+      "theme": "number"
+    },
+    {
+      "id": "how",
+      "en": "how",
+      "ipaUk": "haʊ",
+      "ipaUs": "haʊ",
+      "meaning": "怎样",
+      "theme": "other"
+    },
+    {
+      "id": "many",
+      "en": "many",
+      "ipaUk": "ˈmeni",
+      "ipaUs": "ˈmeni",
+      "meaning": "许多",
+      "theme": "other"
+    },
+    {
+      "id": "are",
+      "en": "are",
+      "ipaUk": "ɑː",
+      "ipaUs": "ɑːr",
+      "meaning": "是（复数）",
+      "theme": "other"
+    },
+    {
+      "id": "there",
+      "en": "there",
+      "ipaUk": "ðeə",
+      "ipaUs": "ðer",
+      "meaning": "那里",
+      "theme": "other"
+    },
+    {
+      "id": "black",
+      "en": "black",
+      "ipaUk": "blæk",
+      "ipaUs": "blæk",
+      "meaning": "黑色",
+      "theme": "color"
+    },
+    {
+      "id": "yellow",
+      "en": "yellow",
+      "ipaUk": "ˈjeləʊ",
+      "ipaUs": "ˈjeloʊ",
+      "meaning": "黄色",
+      "theme": "color"
+    },
+    {
+      "id": "blue",
+      "en": "blue",
+      "ipaUk": "bluː",
+      "ipaUs": "bluː",
+      "meaning": "蓝色",
+      "theme": "color"
+    },
+    {
+      "id": "red",
+      "en": "red",
+      "ipaUk": "red",
+      "ipaUs": "red",
+      "meaning": "红色",
+      "theme": "color"
+    },
+    {
+      "id": "green",
+      "en": "green",
+      "ipaUk": "ɡriːn",
+      "ipaUs": "ɡriːn",
+      "meaning": "绿色",
+      "theme": "color"
+    },
+    {
+      "id": "colour",
+      "en": "colour",
+      "ipaUk": "ˈkʌlə",
+      "ipaUs": "ˈkʌlər",
+      "meaning": "颜色",
+      "theme": "color"
+    },
+    {
+      "id": "apple",
+      "en": "apple",
+      "ipaUk": "ˈæpl",
+      "ipaUs": "ˈæpl",
+      "meaning": "苹果",
+      "theme": "fruit"
+    },
+    {
+      "id": "pear",
+      "en": "pear",
+      "ipaUk": "peə",
+      "ipaUs": "per",
+      "meaning": "梨",
+      "theme": "fruit"
+    },
+    {
+      "id": "banana",
+      "en": "banana",
+      "ipaUk": "bəˈnɑːnə",
+      "ipaUs": "bəˈnænə",
+      "meaning": "香蕉",
+      "theme": "fruit"
+    },
+    {
+      "id": "orange",
+      "en": "orange",
+      "ipaUk": "ˈɒrɪndʒ",
+      "ipaUs": "ˈɔːrɪndʒ",
+      "meaning": "橙子",
+      "theme": "fruit"
+    },
+    {
+      "id": "do",
+      "en": "do",
+      "ipaUk": "duː",
+      "ipaUs": "duː",
+      "meaning": "做",
+      "theme": "other"
+    },
+    {
+      "id": "you",
+      "en": "you",
+      "ipaUk": "juː",
+      "ipaUs": "juː",
+      "meaning": "你",
+      "theme": "other"
+    },
+    {
+      "id": "like",
+      "en": "like",
+      "ipaUk": "laɪk",
+      "ipaUs": "laɪk",
+      "meaning": "喜欢",
+      "theme": "other"
+    },
+    {
+      "id": "yes",
+      "en": "yes",
+      "ipaUk": "jes",
+      "ipaUs": "jes",
+      "meaning": "是的",
+      "theme": "other"
+    },
+    {
+      "id": "no",
+      "en": "no",
+      "ipaUk": "nəʊ",
+      "ipaUs": "noʊ",
+      "meaning": "不",
+      "theme": "other"
+    }
+  ]
+}
