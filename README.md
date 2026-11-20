@@ -4,6 +4,14 @@
 
 玩法是原创的竖屏三列接词，不是横向跑酷。项目用 Flutter 和 Flame 搭画面、菜单和结算，结构上参考了 [Flutter Casual Games Toolkit](https://github.com/flutter/games) 里「菜单 / 对局 / 结算」的分法，但没有使用它的角色、关卡、音效，也没有广告、内购或游戏中心。
 
+## 在浏览器里玩
+
+不用安装 Flutter，直接打开：
+
+https://fix-bugs.github.io/word-catch/
+
+这是网页版。手机浏览器和电脑浏览器都可以玩。代码推到 `master` 之后，GitHub Actions 会重新构建并更新这个网站。
+
 ## 怎么玩
 
 1. 在首页选一个主题，点「开始游戏」。

@@ -1,0 +1,60 @@
+# 把网页版发布到 GitHub Pages。
+# 平时由 master 的推送触发。合并前也可以用 workflow_dispatch 先发一版。
+name: Deploy web
+
+on:
+  push:
+    branches:
+      - master
+      # master 合并前还是空仓库。这条分支的推送用来先把网页版发出去。
+      - cursor/word-catch-game-3b9e
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 安装 Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: 下载依赖
+        run: flutter pub get
+
+      - name: 构建网页
+        run: flutter build web --release --base-href /word-catch/
+
+      # GitHub Pages 遇到未知路径时会打开 404.html。
+      # 游戏本身不靠地址栏分页面，但刷新子路径时仍回到首页。
+      - name: 准备 404 回退
+        run: cp build/web/index.html build/web/404.html
+
+      - name: 上传 Pages 产物
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/web
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 部署到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
