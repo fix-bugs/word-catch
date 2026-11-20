@@ -10,7 +10,9 @@
 
 https://fix-bugs.github.io/word-catch/
 
-这是网页版。手机浏览器和电脑浏览器都可以玩。代码推到 `master` 之后，GitHub Actions 会重新构建并更新这个网站。
+这是网页版。手机浏览器和电脑浏览器都可以玩。代码推到 `master` 之后，GitHub Actions 会用 `flutter build web --base-href /word-catch/` 重新构建并更新这个网站。
+
+第一次发布需要仓库管理员打开 [Pages 设置](https://github.com/fix-bugs/word-catch/settings/pages)，在 Build and deployment 里把 Source 选成 GitHub Actions。选好之后，重新运行失败的 [Deploy web](https://github.com/fix-bugs/word-catch/actions/runs/44656413688) 工作流，网站就会打开。
 
 ## 怎么玩
 
