@@ -1,4 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 跟读录音。只在孩子点「开始录音」时申请，录音不上传。 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
     <application
         android:label="单词捕手"
         android:name="${applicationName}"

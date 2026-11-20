@@ -7,6 +7,7 @@ import '../data/word_bank.dart';
 import '../style/palette.dart';
 import '../style/playful_background.dart';
 import 'play_screen.dart';
+import 'shadow_screen.dart';
 
 /// 首页：标题、主题、简短玩法，然后开始。
 class HomeScreen extends StatefulWidget {
@@ -20,16 +21,23 @@ class _HomeScreenState extends State<HomeScreen> {
   String _themeId = 'animal';
 
   static const List<String> _steps = [
-    '上方会给出中文意思，有时还会带上英音。',
-    '三条跑道落下英文单词，移动到正确的那一列。',
-    '接对会加分，连续接对还有连击。接错，或让正确答案漏过去，会失去一颗心。',
-    '电脑用左右方向键或 A / D。手机点跑道，也可以左右滑动。',
+    '选一个主题，然后开始接词，或者开始跟读。',
+    '接词：看中文，在三条跑道里接住对应的英文。',
+    '接对加分，还能连击。接错或漏接会失去一颗心。',
+    '跟读：先听单词，再自己读。可以录音回放，录音不会上传。',
+    '电脑接词用左右方向键或 A / D。手机点跑道，也可以左右滑动。',
   ];
 
-  void _start() {
+  void _startCatch() {
     unawaited(SoundBoard.instance.play('move'));
     Navigator.of(context).push(
       MaterialPageRoute<void>(builder: (_) => PlayScreen(themeId: _themeId)),
+    );
+  }
+
+  void _startShadow() {
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(builder: (_) => ShadowScreen(themeId: _themeId)),
     );
   }
 
@@ -156,7 +164,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                           const SizedBox(height: 8),
                           const Text(
-                            '一局 8 题，3 颗心。适合一次玩完。',
+                            '接词一局 8 题、3 颗心。跟读一组最多 8 个词。',
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               fontSize: 14,
@@ -169,21 +177,42 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(20, 4, 20, 12),
-                    child: FilledButton(
-                      style: FilledButton.styleFrom(
-                        backgroundColor: Palette.coral,
-                        foregroundColor: Colors.white,
-                        minimumSize: const Size.fromHeight(58),
-                        textStyle: const TextStyle(
-                          fontFamily: AppFonts.display,
-                          fontSize: 24,
+                    child: Column(
+                      children: [
+                        FilledButton(
+                          style: FilledButton.styleFrom(
+                            backgroundColor: Palette.coral,
+                            foregroundColor: Colors.white,
+                            minimumSize: const Size.fromHeight(54),
+                            textStyle: const TextStyle(
+                              fontFamily: AppFonts.display,
+                              fontSize: 22,
+                            ),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18),
+                            ),
+                          ),
+                          onPressed: _startCatch,
+                          child: const Text('开始接词'),
                         ),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(18),
+                        const SizedBox(height: 8),
+                        FilledButton(
+                          style: FilledButton.styleFrom(
+                            backgroundColor: const Color(0xFF2FA36B),
+                            foregroundColor: Colors.white,
+                            minimumSize: const Size.fromHeight(54),
+                            textStyle: const TextStyle(
+                              fontFamily: AppFonts.display,
+                              fontSize: 22,
+                            ),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18),
+                            ),
+                          ),
+                          onPressed: _startShadow,
+                          child: const Text('开始跟读'),
                         ),
-                      ),
-                      onPressed: _start,
-                      child: const Text('开始游戏'),
+                      ],
                     ),
                   ),
                 ],
